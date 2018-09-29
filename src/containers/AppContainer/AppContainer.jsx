@@ -34,7 +34,7 @@ class AppContiner extends React.Component {
   }
 
   init = () => {
-    let cityID = localStorage.getItem('cityID');
+    const cityID = localStorage.getItem('cityID');
     const sortByDistance = localStorage.getItem('sortByDistance');
     const positionRequestConfirmed = localStorage.getItem('positionRequestConfirmed');
     this.setState(
@@ -54,10 +54,10 @@ class AppContiner extends React.Component {
             }
       );
     window.onscroll = () => {
-      cityID = this.state;
       if (window.pageYOffset >= this.offset) {
         this.offset += 600;
         this.limit += 10;
+        const { cityID } = this.state;
         this.setCinemas(cityID, this.limit);
       }
     }
