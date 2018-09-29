@@ -1,0 +1,80 @@
+export default () => ({
+  branchSign: {
+    display: 'inline-flex',
+    width: 10,
+    height: 10,
+    borderRadius: '50%',
+  },
+  station: {
+    display: 'inline-flex',
+    marginRight: 15,
+  },
+  subway: {
+    display: 'flex',
+    minHeight: '20px',
+    flexDirection: 'row',
+    marginTop: 5,
+  },
+  stationName: {
+    fontSize: '14px',
+    color: '#bbbbbb',
+    lineHeight: '17px',
+    paddingLeft: 3,
+    fontWeight: 600,
+  },
+  card: {
+    display: 'flex',
+    minHeight: 120,
+    padding: 10,
+    marginTop: 10,
+    border: 'solid 1px lightgray',
+    boxShadow: '0 0 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22)',
+    maxWidth: 600,
+    minWidth: 600,
+  },
+  adress: {
+    fontSize: '16px',
+    color: '#aaaaaa',
+    fontWeight: 400,
+    marginTop: 15,
+    minHeight: '20px',
+  },
+  title: {
+    fontSize: '18px',
+    color: '#666666',
+    fontWeight: 600,
+    flexGrow: 1,
+  },
+  labels: {
+    fontSize: '13px',
+    flexGrow: 1,
+    '& label': {
+      padding: '3px',
+      border: 'solid 1px',
+      color: 'darksalmon',
+    },
+  },
+  addButton: {
+    '& button': {
+      fontSize: '18px',
+      borderRadius: '50%',
+      background: 'transparent',
+      border: 'solid 1px lightblue',
+      color: 'lightblue',
+      outline: 'none',
+      cursor: 'pointer',
+    },
+  },
+  left: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    flexGrow: 1,
+  },
+  right: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    flexGrow: 0,
+  },
+});
